@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Finnegan</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+</head>
+<body>
+    <div class="totalmain" id="home">
+    <header class="nav" id="nav">
+        <div class="logocontainer">
+            <a href="#home"><img class="logo" src="images/logo.png"></a>
+        </div>
+        <div class="links">
+            <ul class="linkslist">
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </div>
+        <div onclick="burger()" class="burgercontainer">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+    </header>
+
+    <div class="dropdownmenu">
+        <ul>
+            <a href="#home"><li onclick="burger()">Home</li></a>
+            <a href="#about"><li onclick="burger()">About</li></a>
+            <a href="#projects"><li onclick="burger()">Projects</li></a>
+            <a href="#contact"><li onclick="burger()">Contact</li></a>
+        </ul>
+    </div>
+
+    <div class="maincontainer">
+        <h1 class="introname">Hey, I'm Jack Finnegan</h1>
+        <h2 id="secondHeader">Web Developer</h2>
+        <br>
+        <div class="btncontainer">
+            <a href="#projects"><button class="default-btn" btn-hover="View">Projects</button></a>
+            <a href="images/Jack Finnegan Resume.pdf" target="_blank" download="JFResume">
+                <button class="default-btn" btn-hover="Download">Resume</button>
+            </a>
+        </div>
+
+        <div id="socialscontainer" class="socialscontainer">
+            <div class="socials">
+                <ul>
+                    <a href="https://github.com/JackF-22" target="_blank"><li><img src="images/githublogo.png"></li></a>
+                    <a href="https://www.linkedin.com/in/jackfinnegan22/" target="_blank"><li><img src="images/lilogo.png"></li></a>
+                    <a href="mailto: jackfinnegandev@gmail.com"><li><img src="images/gmail.png"></li></a>
+                </ul>
+            </div>
+            <p id="sidebtn" class="sidebtn" onclick="sideBar()"><i class="fa-solid fa-circle-chevron-left"></i></p>
+            <br><br><br>
+        </div>
+
+        <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+
+    </div>
+    </div>
+    
+
+    <div class="about" id="about">
+        <h1 class="abh"><span style="color: #2588FF; margin-right: 20px;">About</span>Me</h1>
+        <div class="aboutcontainer reveals">
+        <div class="bio reveals">
+            <h3>Biography</h3><br>
+            <p>My name is Jack Finnegan and I'm a web developer. I have been building websites for multiple years now. I will soon be looking to pursue this interest, majoring in Computer Science
+                at MIT this coming fall. 
+            </p><br>
+            <p>I love to take complex problems and view them as a puzzle to be solved. I see websites as a road map of puzzle pieces,
+                waiting to be fit together. I enjoy the process of combining technicals with the aesthetic of Web Development, as well as
+                giving people and companies websites to be proud of.
+            </p><br>
+            <p>Technology holds enormous power in our society, and I want to harness this power. It is my goal to help people do this as
+                well, driving traffic and gaining customers with an amazing website. I'm ready to work and I am flexible to whatever your 
+                needs may be.
+            </p>
+        </div>
+        <div class="skills">
+            <div class="mediv">
+                <h3>That's Me</h3><br>
+                <img class="arrow" src="images/drawnarrow.png">
+                <img class="seniorpic" src="images/seniorpic.jpg">
+            </div>
+            <div class="cloud">
+                <h3>My Skills</h3><br>
+                <span class="content"></span>
+            </div>
+            <section class="timeline">
+                <h1 class="titleh">My Skills</h1>
+                <ul>
+                  <li>
+                    <div>
+                      <h1>FrontEnd<br> HTML, CSS, JavaScript</h1>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h1>BackEnd<br> Java, Python, SQL</h1>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h1>Frameworks<br> React, Flask</h1>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+        </div>
+    </div>
+    </div>
+
+    <div id="projects" class="projects reveals">
+        <h1>My  <span style="color: white; margin-left: 10px;">Projects</span></h1><br>
+        <div class="projectcontainer reveals">
+            <div class="projectbox artempo reveals">
+                <div class="projectlayer"></div>
+                <div class="text">
+                    <h2>Art Emporium</h2>
+                    <p>Shop Display & History</p>
+                    <br>
+                    <div class="techstack">
+                        <ul>
+                            <li class="html">HTML</li>
+                            <li class="css">CSS</li>
+                            <li class="js">JavaScript</li>
+                        </ul>
+                        <button onclick="projectInfo(this)" value=0 class="learnmore">Learn More <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="projectbox bluehound reveals">
+                <div class="projectlayer"></div>
+                <div class="text">
+                    <h2>Blue Hound</h2>
+                    <p>Local Restaurant Website</p>
+                    <br>
+                    <div class="techstack">
+                        <ul>
+                            <li class="html">HTML</li>
+                            <li class="css">CSS</li>
+                            <li class="js">JavaScript</li>
+                        </ul>
+                        <button onclick="projectInfo(this)" value=1 class="learnmore">Learn More <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sidebar"> 
+        <div class="arrowdiv">
+            <i onclick="returnPage()" id="circlearrow" class="fa-solid fa-circle-chevron-left"></i>
+        </div>
+        <div class="sbtext">
+            <h1 id="title"></h1>
+            <h5 id="brief"></h5><br>
+            <img id="image" src="#"><br><br>
+            <h3 id="description"></h3><br><br>
+            <div>
+                <ul class="sbstack" id="techlist">
+        
+                </ul>
+            </div>
+            <br><hr><br>
+            <a id="weblink" target="_blank" href="#">Website Link<i class="fa-solid fa-up-right-from-square"></i></a><br><br><hr><br>
+            <a id="gitlink" target="_blank" href="#">Github Link<i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+    </div>
+
+    <div class="entirecover"></div>
+
+    <div id="contact" class="contact reveals">
+        <h1><span style="color: #2588FF; margin-right: 10px;">CONTACT</span> ME</h1>
+    <form action="https://formsubmit.co/jackfinnegandev@gmail.com" method="POST" class="contactcontainer">
+        <h2>Let's Work Together!</h2>
+        <div class="formBox">
+            <div style="margin-bottom: 30px;" class="inputBox w50">
+                <input name="firstName" type="text" required>
+                <span>First Name</span>
+            </div>
+            <div style="margin-bottom: 30px;" class="inputBox w50">
+                <input type="text" name="lastName" required>
+                <span>Last Name</span>
+            </div>
+            <div class="inputBox w50">
+                <input name="email" type="email" required>
+                <span>Email Address</span>
+            </div>
+            <div class="inputBox w50">
+                <input name="phoneNumber" value="" id="phone" type="tel" required>
+                <span>Mobile Number</span>
+            </div>
+            <div style="margin-top: 50px" class="inputBox w100">
+                <textarea name="message" required></textarea>
+                <span>Write your message here...</span>
+            </div>
+            
+            <button style="margin-top: -3.5rem;" class="submitbtn" type="submit">Send</button>
+        </div>
+    </form>
+</div>
+
+    <footer class="reveals">
+        <div class="action">
+            <img src="images/logowhite.png">
+            <br>
+            <h1>Jack Finnegan Web Development</h1><br>
+            <h3>It's time for you to start making technology your strength. A clean website can do wonders for your business.</h3><br><br>
+            <a href="#contact">
+                <button class="default-btn" btn-hover="Contact Me">Let's Get Started</button>
+            </a>
+        </div>
+        <div class="pagelinks">
+            <h2><ins>Page Links</ins></h2>
+            <div class="footlinks">
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#about"><li>About</li></a>
+                    <a href="#projects"><li>Projects</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="sociallinks">
+            <h2><ins>Socials</ins></h2>
+            <div class="footlinks">
+                <ul>
+                    <a href="https://www.linkedin.com/in/jackfinnegan22/"><li>LinkedIn<i class="fa-brands fa-linkedin"></i></li></a>
+                    <a href="https://github.com/JackF-22"><li>Github <i style="font-size: 1.5rem" class="fa-brands fa-github"></i></li></a>
+                    <a href="mailto: jackfinnegandev@gmail.com"><li>GMail<i class="fa-solid fa-envelope"></i></li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2023 Jack Finnegan Web Development
+        </div>
+    </footer>
+    </body>
+    
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/e906391d90.js" crossorigin="anonymous"></script>
+</html>
